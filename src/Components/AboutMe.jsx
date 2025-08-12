@@ -7,7 +7,7 @@ const AboutMe = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           About Me
         </h2>
-        <div className=" bg-white shadow-lg rounded-lg p-8 leading-relaxed text-gray-700 space-y-4">
+        <div className="  p-8 leading-relaxed text-gray-700 space-y-4">
           <p>
             I am an aspiring Frontend Developer with a deep passion for crafting engaging and intuitive web experiences. While I may be early in my career, my enthusiasm for learning and commitment to improving my skills drive me to constantly grow as a developer. I am dedicated to mastering the tools and technologies that allow me to create beautiful, responsive, and user-friendly websites.
           </p>
