@@ -33,9 +33,9 @@ const Contact = () => {
   return (
    <div id="contact" className=" bg-gray-900 text-white">
        <section className="max-w-6xl mx-auto flex flex-col justify-between ">
-      <div className=" flex items-center justify-around py-20 gap-30 ">
+     <div className="flex flex-col md:flex-row items-center justify-around py-20 gap-10 md:gap-30">
         {/* Left info panel */}
-        <div className="space-y-6 ">
+         <div className="space-y-6 max-w-md md:max-w-none w-full md:w-auto">
           <h1 className="text-5xl font-extrabold flex items-center gap-2">
             Anam <span className="text-red-500">.</span>
           </h1>
@@ -54,9 +54,9 @@ const Contact = () => {
         </div>
 
         {/* Right contact form */}
-        <div className="">
+        <div className="w-full max-w-md md:max-w-none">
           <h2 className="text-4xl font-extrabold mb-2">
-            <span className="bg-white/20 text-black px-2">CONTACT</span> ME
+            <span className="">CONTACT</span> ME
           </h2>
           <p className="uppercase text-sm text-gray-400 mb-8">
             IF YOU HAVE QUESTIONS PLEASE LEAVE A MESSAGE

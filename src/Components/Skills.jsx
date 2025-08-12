@@ -67,19 +67,20 @@ const Skills = () => {
      { name: 'Figma', icon: <SiFigma className="text-pink-500 text-4xl" /> },
   ];
 
-  const SkillCategory = ({ title, skills }) => (
-    <div className=" py-7 px-14 rounded-lg border">
-      <h3 className="text-2xl font-bold mb-4">{title}</h3>
-      <div className="">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex  items-center  p-4  transition">
-            {skill.icon}
-            <p className="mt-2 pl-5 font-medium">{skill.name}</p>
-          </div>
-        ))}
-      </div>
+ const SkillCategory = ({ title, skills }) => (
+  <div className="py-7 bg-gray-200 px-14 rounded-lg border hover:shadow-2xl transition-shadow duration-300">
+    <h3 className="text-2xl font-bold mb-4">{title}</h3>
+    <div>
+      {skills.map((skill, index) => (
+        <div key={index} className="flex items-center p-4 transition">
+          {skill.icon}
+          <p className="mt-2 pl-5 font-medium">{skill.name}</p>
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
+
 
   return (
     <section id="skills" className="bg-white py-16">

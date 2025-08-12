@@ -3,49 +3,53 @@ import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 
-import portfolioImg from "../assets/nobackanam.png";
-import ecommerceImg from "../assets/nobackanam.png";
-import blogImg from "../assets/nobackanam.png";
+import portfolioImg from "../assets/tourzen.png";
+import ecommerceImg from "../assets/secure-tomorrow.png";
+import blogImg from "../assets/plantly.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Tourzen",
       description:
-        "A personal portfolio showcasing my skills, projects, and contact information. Built with React and Tailwind CSS.",
+        "A dynamic tour booking platform that helps users explore and plan their perfect trips with an easy-to-use interface, built with React and Tailwind CSS.",
       image: portfolioImg,
       tech: [
-        <FaReact className="text-cyan-400" />,
+       <FaReact className="text-cyan-400" />,
         <SiTailwindcss className="text-teal-400" />,
+        <FaNodeJs className="text-green-500" />,
+        <SiMongodb className="text-green-700" />,
       ],
-      github: "https://arman-mia.netlify.app/#projects",
-      live: "https://arman-mia.netlify.app/#projects",
+      github: "https://github.com/anamolhasan/tourzen-client?tab=readme-ov-file",
+      live: "https://tourzen-b2ebf.web.app/",
     },
     {
-      title: "E-commerce App",
+      title: "Secure Tomorrow",
       description:
-        "Full-stack e-commerce application with authentication, product management, and payment integration.",
+        "An insurance management system offering secure policy handling, claims processing, and customer account management for peace of mind.",
       image: ecommerceImg,
       tech: [
         <FaReact className="text-cyan-400" />,
+        <SiTailwindcss className="text-teal-400" />,
         <FaNodeJs className="text-green-500" />,
         <SiMongodb className="text-green-700" />,
       ],
-      github: "https://github.com/username/ecommerce",
-      live: "https://ecommerce-demo.vercel.app/",
+      github: "https://github.com/anamolhasan/secure_tomorrow_client",
+      live: "https://tomorrow-130f9.web.app/",
     },
     {
-      title: "Blog Platform",
+      title: "Plantly",
       description:
-        "A blog platform where users can write, edit, and comment on posts. Includes authentication with JWT.",
+        "An interactive community-driven plant care blog where users can publish articles, exchange gardening advice, and participate in discussions to nurture their passion for plants.",
       image: blogImg,
       tech: [
         <FaReact className="text-cyan-400" />,
+        <SiTailwindcss className="text-teal-400" />,
         <FaNodeJs className="text-green-500" />,
         <SiMongodb className="text-green-700" />,
       ],
-      github: "https://github.com/username/blog-platform",
-      live: "https://blog-platform.vercel.app/",
+      github: "https://github.com/anamolhasan/plantly-client",
+      live: "https://plantly-ff2fd.web.app/",
     },
   ];
 
