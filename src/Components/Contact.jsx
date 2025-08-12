@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-   <div className=" bg-gray-900 text-white">
+   <div id="contact" className=" bg-gray-900 text-white">
        <section className="max-w-6xl mx-auto flex flex-col justify-between ">
       <div className=" flex items-center justify-around py-20 gap-30 ">
         {/* Left info panel */}
@@ -42,11 +42,11 @@ const Contact = () => {
           <div className="space-y-4 text-gray-300">
             <p className="flex items-center gap-3"><FaEnvelope /> anamolhasan.job@gmail.com</p>
             <p className="flex items-center gap-3"><FaPhone /> +88 01950029882</p>
-            <p className="flex items-center gap-3"><FaMapMarkerAlt /> Dhaka, Bangladesh</p>
+            <p className="flex items-center gap-3"><FaMapMarkerAlt /> Brahmon-baria, Bangladesh</p>
           </div>
           <h3 className="uppercase tracking-widest font-semibold text-gray-400">Connect On</h3>
           <div className="flex space-x-6">
-            <a href="#" aria-label="Facebook" className="p-3 rounded-full bg-[#1a1b29] hover:bg-red-600 transition-colors"><FaFacebookF /></a>
+            <a href="https://www.facebook.com/an.am.hsan.2024?mibextid=ZbWKwL" aria-label="Facebook" className="p-3 rounded-full bg-[#1a1b29] hover:bg-red-600 transition-colors"><FaFacebookF /></a>
             <a href="www.linkedin.com/in/anamolhasan" aria-label="LinkedIn" className="p-3 rounded-full bg-[#1a1b29] hover:bg-blue-700 transition-colors"><FaLinkedinIn /></a>
             <a href="https://github.com/anamolhasan" aria-label="Github" className="p-3 rounded-full bg-[#1a1b29] hover:bg-gray-700 transition-colors"><FaGithub /></a>
             <a href="#" aria-label="Discord" className="p-3 rounded-full bg-[#1a1b29] hover:bg-indigo-700 transition-colors"><FaDiscord /></a>

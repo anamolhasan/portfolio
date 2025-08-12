@@ -8,10 +8,10 @@ const Header = () => {
           Anan
         </div>
         <nav className='hidden md:flex space-x-8 font-semibold text-gray-700'>
-          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Home</a>
-          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">About</a>
-          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Skill</a>
-          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Contact</a>
+          <a href="#home" className="hover:text-indigo-600 transition-colors duration-300">Home</a>
+          <a href="#about-me" className="hover:text-indigo-600 transition-colors duration-300">About</a>
+          <a href="#skills" className="hover:text-indigo-600 transition-colors duration-300">Skill</a>
+          <a href="#contact" className="hover:text-indigo-600 transition-colors duration-300">Contact</a>
         </nav>
         <div>
           <a 

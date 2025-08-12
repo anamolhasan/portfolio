@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div className=" py-16">
+    <div id='about-me' className=" py-16">
       <div className="">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           About Me

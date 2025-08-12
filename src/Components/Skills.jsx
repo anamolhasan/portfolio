@@ -31,7 +31,7 @@ const Skills = () => {
     },
     { name: "React", icon: <FaReact className="text-cyan-400 text-4xl" /> },
      { name: 'React Router v7', icon: <SiReactrouter className="text-red-500 text-4xl" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-black text-4xl" /> },
+    // { name: "Next.js", icon: <SiNextdotjs className="text-black text-4xl" /> },
 
     {
       name: "Tailwind CSS",
@@ -82,7 +82,7 @@ const Skills = () => {
   );
 
   return (
-    <section className="bg-white py-16">
+    <section id="skills" className="bg-white py-16">
       <div className=" px-5 md:px-10 space-y-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
           My Skills
