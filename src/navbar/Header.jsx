@@ -2,22 +2,27 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='bg-gray-300'>
-        <div className='flex justify-between items-center container mx-auto py-5'>
-        <div className='text-3xl font-bold'>Anan</div>
-        <div className='space-x-5 font-bold hidden md:block'>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill</a>
-            <a href="#">Contact</a>
-            
-           
+    <header className='bg-gray-100 shadow-md sticky top-0 z-50'>
+      <div className='container mx-auto flex justify-between items-center py-4 px-6'>
+        <div className='text-3xl font-extrabold text-indigo-600 cursor-pointer'>
+          Anan
         </div>
-        <div className='font-bold'>
-         <a href="#">Resume</a>
+        <nav className='hidden md:flex space-x-8 font-semibold text-gray-700'>
+          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Home</a>
+          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">About</a>
+          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Skill</a>
+          <a href="#" className="hover:text-indigo-600 transition-colors duration-300">Contact</a>
+        </nav>
+        <div>
+          <a 
+            href="#" 
+            className="font-semibold bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-colors duration-300"
+          >
+            Resume
+          </a>
         </div>
-    </div>
-    </div>
+      </div>
+    </header>
   )
 }
 

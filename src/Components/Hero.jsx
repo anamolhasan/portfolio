@@ -3,8 +3,8 @@ import myPhoto from '../assets/nobackanam.png'
 
 const Hero = () => {
   return (
-    <div className="bg-gray-100 p-10">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-5">
+    <div className="bg-gray-100 ">
+      <div className="container mx-auto flex  items-center justify-around ">
         
         {/* Text Section */}
         <div className="text-center md:text-left max-w-lg">
@@ -14,17 +14,17 @@ const Hero = () => {
           <p className="text-lg text-gray-700 mb-6">
             I’m a MERN Stack Developer passionate about building modern, responsive web applications.
           </p>
-          <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+          <button className="bg-blue-500 text-white px-6 py-2  rounded-lg hover:bg-blue-600 transition">
             Hire Me
           </button>
         </div>
 
         {/* Image Section */}
-        <div className="mt-8 md:mt-0">
+        <div className="  pb-20">
           <img
             src={myPhoto}
             alt="Anamol Hasan"
-            className="w-64 md:w-80 drop-shadow-lg rounded-full"
+            className="w-64 md:w-100 drop-shadow-lg rounded-full"
           />
         </div>
 

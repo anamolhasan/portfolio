@@ -87,7 +87,7 @@ const Skills = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
           My Skills
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-15">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           <SkillCategory title="Frontend" skills={frontend} />
           <SkillCategory title="Backend" skills={backend} />
           <SkillCategory title="Tools" skills={tools} />
