@@ -1,19 +1,24 @@
 import React from 'react'
 import { FaFacebook, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa'
-import myPhoto from '../assets/nobackanam.png'
+// import myPhoto from '../assets/anamolhasan.jpg'
+import myPhoto from '../assets/nobackanam1.png'
 
 const Hero = () => {
   return (
-    <div id='home' className="bg-gray-100">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-around py-10">
+    <div id='home' className="">
+     <div
+  className="container mx-auto flex flex-col md:flex-row items-center justify-around py-10 px-5 mt-20 md:mt-0 bg-cover bg-center"
+ 
+>
         
         {/* Text Section */}
         <div className="text-center md:text-left max-w-lg">
+          <p className='text-xl mb-3 text-white'> Hi, I'm</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, I'm <span className="text-blue-500">Anamol Hasan</span>
+            <span className="">Anamol Hasan</span>
           </h1>
-          <p className="text-lg text-gray-700 mb-6">
-            I’m a MERN Stack Developer passionate about building modern, responsive web applications.
+          <p className="text-lg font-bold text-gray-700 mb-6">
+           I am a Passionate Web Developer skilled in building modern, responsive, and user-friendly websites. Experienced in frontend design, web app development, and creative UI/UX solutions......
           </p>
           
           {/* Hire Me Button */}
@@ -44,11 +49,11 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="pb-10 md:pb-20">
+        <div className="py-10 md:py-20">
           <img
             src={myPhoto}
             alt="Anamol Hasan"
-            className="w-64 md:w-100 drop-shadow-lg rounded-full"
+            className="w-64 md:w-100  drop-shadow-lg rounded-full border border-white"
           />
         </div>
       </div>

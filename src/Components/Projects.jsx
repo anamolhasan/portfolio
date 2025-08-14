@@ -22,6 +22,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/tourzen-client?tab=readme-ov-file",
       live: "https://tourzen-b2ebf.web.app/",
+    projectDetails:'#project1'
     },
     {
       title: "Secure Tomorrow",
@@ -36,6 +37,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/secure_tomorrow_client",
       live: "https://tomorrow-130f9.web.app/",
+        projectDetails:'#project2'
     },
     {
       title: "Plantly",
@@ -50,6 +52,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/plantly-client",
       live: "https://plantly-ff2fd.web.app/",
+         projectDetails:'#project3'
     },
   ];
 
@@ -98,6 +101,15 @@ const Projects = () => {
                     className="flex items-center gap-1 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
                   >
                     <FiExternalLink /> Live
+                  </a>
+                  <a
+                    // href={project.projectDetails}
+                    href='/project1'
+                   
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
+                  >
+                    <FiExternalLink /> Details
                   </a>
                  
                 </div>

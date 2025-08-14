@@ -1,12 +1,7 @@
 import React from "react";
 import { BiLogoVisualStudio } from "react-icons/bi";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { MdWbTwilight } from "react-icons/md";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -14,7 +9,6 @@ import {
   SiExpress,
   SiGithub,
   SiFirebase,
-  SiNextdotjs,
   SiReactrouter,
   SiJsonwebtokens,
   SiStripe,
@@ -22,77 +16,67 @@ import {
 } from "react-icons/si";
 
 const Skills = () => {
+  // ==== data (white icon inside colored circle) ====
   const frontend = [
-    { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
-    { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
-    {
-      name: "JavaScript",
-      icon: <SiJavascript className="text-yellow-400 text-4xl" />,
-    },
-    { name: "React", icon: <FaReact className="text-cyan-400 text-4xl" /> },
-     { name: 'React Router v7', icon: <SiReactrouter className="text-red-500 text-4xl" /> },
-    // { name: "Next.js", icon: <SiNextdotjs className="text-black text-4xl" /> },
-
-    {
-      name: "Tailwind CSS",
-      icon: <SiTailwindcss className="text-teal-400 text-4xl" />,
-    },
+    { name: "HTML", Icon: FaHtml5, bg: "bg-orange-500" },
+    { name: "CSS", Icon: FaCss3Alt, bg: "bg-blue-500" },
+    { name: "JavaScript", Icon: SiJavascript, bg: "bg-yellow-400" },
+    { name: "React", Icon: FaReact, bg: "bg-cyan-400" },
+    { name: "React Router v7", Icon: SiReactrouter, bg: "bg-red-500" },
+    { name: "Tailwind CSS", Icon: SiTailwindcss, bg: "bg-teal-400" },
   ];
 
   const backend = [
-    { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" /> },
-    {
-      name: "Express.js",
-      icon: <SiExpress className="text-gray-600 text-4xl" />,
-    },
-    {
-      name: "MongoDB",
-      icon: <SiMongodb className="text-green-600 text-4xl" />,
-    },
-    {
-      name: "Firebase",
-      icon: <SiFirebase className="text-yellow-500 text-4xl" />,
-    },
-     { name: 'JWT', icon: <SiJsonwebtokens className="text-orange-400 text-4xl" /> },
-    { name: 'Stripe', icon: <SiStripe className="text-purple-500 text-4xl" /> },
+    { name: "Node.js", Icon: FaNodeJs, bg: "bg-green-500" },
+    { name: "Express.js", Icon: SiExpress, bg: "bg-gray-500" },
+    { name: "MongoDB", Icon: SiMongodb, bg: "bg-green-600" },
+    { name: "Firebase", Icon: SiFirebase, bg: "bg-yellow-500" },
+    { name: "JWT Auth", Icon: SiJsonwebtokens, bg: "bg-orange-400" },
+    { name: "Stripe", Icon: SiStripe, bg: "bg-purple-500" },
   ];
 
   const tools = [
-    { name: "Git", icon: <FaGitAlt className="text-orange-600 text-4xl" /> },
-    { name: "GitHub", icon: <SiGithub className="text-gray-800 text-4xl" /> },
-    {
-      name: "VS Code",
-      icon: <BiLogoVisualStudio className="text-blue-600 text-4xl" />,
-    },
-     { name: 'Figma', icon: <SiFigma className="text-pink-500 text-4xl" /> },
+    { name: "Git", Icon: FaGitAlt, bg: "bg-red-500" },
+    { name: "GitHub", Icon: SiGithub, bg: "bg-gray-800" },
+    { name: "VS Code", Icon: BiLogoVisualStudio, bg: "bg-blue-600" },
+    { name: "Figma", Icon: SiFigma, bg: "bg-pink-500" },
   ];
 
- const SkillCategory = ({ title, skills }) => (
-  <div className="py-7 bg-gray-200 px-14 rounded-lg border hover:shadow-2xl transition-shadow duration-300">
-    <h3 className="text-2xl font-bold mb-4">{title}</h3>
-    <div>
-      {skills.map((skill, index) => (
-        <div key={index} className="flex items-center p-4 transition">
-          {skill.icon}
-          <p className="mt-2 pl-5 font-medium">{skill.name}</p>
-        </div>
-      ))}
+  // ==== reusable renderer ====
+  const SkillCategory = ({ title, skills }) => (
+    <div className="text-center">
+      <h3 className="text-3xl font-bold mb-6">{title}</h3>
+      {/* <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2"> */}
+      <div className="flex  flex-wrap justify-center gap-8  place-items-center">
+        {skills.map(({ name, Icon, bg }, i) => (
+          <div key={i} className="flex flex-col items-center">
+            <div
+              className={`w-16 h-16 rounded-full ${bg} flex items-center justify-center transform transition
+                          hover:scale-105 shadow-md`}
+            >
+              <Icon className="text-4xl text-white" />
+            </div>
+            <p className="mt-3 font-bold">{name}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
-
+  );
 
   return (
-    <section id="skills" className="bg-white py-16">
-      <div className=" px-5 md:px-10 space-y-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          My Skills
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          <SkillCategory title="Frontend" skills={frontend} />
-          <SkillCategory title="Backend" skills={backend} />
-          <SkillCategory title="Tools" skills={tools} />
+    <section id="skills" className=" text-black py-16">
+      <div className="container mx-auto px-5 md:px-10 space-y-14">
+        {/* Section header (icon top, text bottom, centered) */}
+        <div className="flex flex-col items-center justify-center text-center">
+          <MdWbTwilight className="text-5xl mb-2" />
+          <p className="tracking-[0.2em] text-sm opacity-80">EXPERTISE</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">Skill Set</h2>
         </div>
+
+        {/* Categories */}
+        <SkillCategory title="Frontend" skills={frontend} />
+        <SkillCategory title="Backend" skills={backend} />
+        <SkillCategory title="Tools" skills={tools} />
       </div>
     </section>
   );
