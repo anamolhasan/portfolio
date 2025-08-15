@@ -23,7 +23,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/tourzen-client?tab=readme-ov-file",
       live: "https://tourzen-b2ebf.web.app/",
-    projectDetails:'/project1'
+    projectDetails:'tourzen'
     },
     {
       title: "Secure Tomorrow",
@@ -38,7 +38,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/secure_tomorrow_client",
       live: "https://tomorrow-130f9.web.app/",
-        projectDetails:'/project2'
+        projectDetails:'secure-tomorrow'
     },
     {
       title: "Plantly",
@@ -53,7 +53,7 @@ const Projects = () => {
       ],
       github: "https://github.com/anamolhasan/plantly-client",
       live: "https://plantly-ff2fd.web.app/",
-         projectDetails:'/project3'
+         projectDetails:'plantly'
     },
   ];
 
@@ -104,7 +104,7 @@ const Projects = () => {
                     <FiExternalLink /> Live
                   </a>
                   <Link
-                    to={project.projectDetails}
+                    to={`/projectDetails/${project.projectDetails}`}
                     // href='/project1'
                    
                     rel="noopener noreferrer"

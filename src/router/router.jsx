@@ -1,4 +1,10 @@
 import { createBrowserRouter } from "react-router";
+import Project1 from "../detailsProject/Project1";
+import ProjectDetailsLayOut from "../layout/ProjectDetailsLayOut";
+import Tourzen from "../detailsProject/Tourzen";
+import HomeLayout from "../layout/HomeLayout";
+import SecureTomorrow from "../detailsProject/SecureTomorrow";
+import Plantly from "../detailsProject/Plantly";
 
 
 
@@ -6,23 +12,27 @@ export const router = createBrowserRouter([
     {
         index: true,
         path: '/',
-        element: 'HomeLayOut'
+        element: <HomeLayout />
     },
     {
-        path: '/projectDetails',
-        element : 'ProjectDetailsLayOut',
+        path: 'projectDetails',
+        element : <ProjectDetailsLayOut />,
         children: [
             {
-                path : 'course-management',
-                element : 'CourseManagementProject'
+                path : 'tourzen',
+                element : <Tourzen ></Tourzen>
             },
             {
-                path: 'roommate-finder',
-                element : 'RoommateFinderProject'
+                path: 'secure-tomorrow',
+               Component: SecureTomorrow
             },
             {
-                path : 'dev-forum',
-                element : 'DevForumProject'
+                path : 'plantly',
+               Component: Plantly
+            },
+            {
+                path : 'project1',
+                Component : Project1
             }
         ]
     }
