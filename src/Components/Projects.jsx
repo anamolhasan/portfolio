@@ -12,8 +12,8 @@ const Projects = () => {
   const projects = [
     {
       title: "Tourzen",
-      description:
-        "A dynamic tour booking platform that helps users explore and plan their perfect trips with an easy-to-use interface, built with React and Tailwind CSS.",
+      // description:
+      //   "A dynamic tour booking platform that helps users explore and plan their perfect trips with an easy-to-use interface, built with React and Tailwind CSS.",
       image: portfolioImg,
       tech: [
        <FaReact className="text-cyan-400" />,
@@ -27,8 +27,8 @@ const Projects = () => {
     },
     {
       title: "Secure Tomorrow",
-      description:
-        "An insurance management system offering secure policy handling, claims processing, and customer account management for peace of mind.",
+      // description:
+      //   "An insurance management system offering secure policy handling, claims processing, and customer account management for peace of mind.",
       image: ecommerceImg,
       tech: [
         <FaReact className="text-cyan-400" />,
@@ -42,8 +42,8 @@ const Projects = () => {
     },
     {
       title: "Plantly",
-      description:
-        "An interactive community-driven plant care blog where users can publish articles, exchange gardening advice, and participate in discussions to nurture their passion for plants.",
+      // description:
+      //   "An interactive community-driven plant care blog where users can publish articles, exchange gardening advice, and participate in discussions to nurture their passion for plants.",
       image: blogImg,
       tech: [
         <FaReact className="text-cyan-400" />,
@@ -60,14 +60,14 @@ const Projects = () => {
   return (
     <section className=" py-16" id="projects">
       <div className="container mx-auto px-5 md:px-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center  mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center  mb-12 caveat-write">
           My Projects
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition transform"
+              className=" rounded-xl shadow-lg  overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition transform"
             >
               <img
                 src={project.image}
@@ -76,7 +76,7 @@ const Projects = () => {
               />
               <div className="p-5 flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                  <h3 className="text-xl font-semibold  mb-2">
                     {project.title}
                   </h3>
                   <p className="text-gray-300 mb-4">{project.description}</p>

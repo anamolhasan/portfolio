@@ -19,14 +19,14 @@ const SecureTomorrow = () => {
                   <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                     <a
                       rel="noopener noreferrer"
-                      href="https://tourzen-b2ebf.web.app/"
+                      href="https://tomorrow-130f9.web.app/"
                       className="px-8 py-3 text-lg font-semibold rounded bg-black text-gray-50"
                     >
                       Live View
                     </a>
                     <a
                       rel="noopener noreferrer"
-                      href="https://github.com/anamolhasan/tourzen-client?tab=readme-ov-file"
+                      href="https://github.com/anamolhasan/secure_tomorrow_client"
                       className="px-8 py-3 text-lg font-semibold rounded bg-black text-gray-50"
                     >
                     Source Code

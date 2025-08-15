@@ -3,7 +3,7 @@ import { MdPersonOutline } from "react-icons/md";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="relative bg-gradient-to-br  py-16 px-6 md:px-20">
+    <section id="about-me" className="relative bg-gradient-to-br  px-6 md:px-20">
       {/* Container */}
       <div className="max-w-5xl mx-auto">
         {/* Icon + Title */}
@@ -11,7 +11,7 @@ const AboutMe = () => {
           <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-teal-400 to-cyan-500 shadow-lg mb-4">
             <MdPersonOutline className="text-white text-4xl" />
           </div>
-          <h2 className="text-4xl font-extrabold text-gray-800 tracking-wide">
+          <h2 className="text-4xl font-extrabold text-gray-800 tracking-wide caveat-write">
             About Me
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-teal-400 to-cyan-500 mt-2 rounded-full"></div>

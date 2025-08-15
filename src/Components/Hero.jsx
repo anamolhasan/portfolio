@@ -15,15 +15,15 @@ const Hero = () => {
         <div className="text-center md:text-left max-w-lg">
           <p className='text-xl mb-3 text-white'> Hi, I'm</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="">Anamol Hasan</span>
+            <span className="caveat-write">Anamol Hasan</span>
           </h1>
           <p className="text-lg font-bold text-gray-700 mb-6">
            I am a Passionate Web Developer skilled in building modern, responsive, and user-friendly websites. Experienced in frontend design, web app development, and creative UI/UX solutions......
           </p>
           
           {/* Hire Me Button */}
-          <button className="bg-blue-500 text-white px-16 py-2 rounded-lg hover:bg-blue-600 transition">
-            Hire Me
+          <button className="hover:border hover:border-blue-600 text-white hover:text-blue-600 px-16 py-2 rounded-lg bg-blue-600 hover:bg-transparent transition shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)] ">
+            My Resume
           </button>
 
           {/* Social Icons */}

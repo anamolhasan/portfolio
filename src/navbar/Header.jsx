@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaDownload } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
+import logo from '../assets/logo-remove.png'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full  backdrop-blur-md z-50">
       {/* <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-white/20 via-sky-100/20 to-sky-200/70 backdrop-blur-md z-50"> */}
       <div className="container mx-auto flex items-center justify-between px-6 py-5">
-        <h1 className="text-4xl font-bold beginner">
-          An<span className="text-red-500">a</span>mol
-        </h1>
+        <img src={logo} className="w-48 cursor-pointer" alt="" />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 font-bold text-xl text-gray-700 border shadow-lg border-gray-300 py-3 px-10 rounded-full list-none">
@@ -80,7 +79,7 @@ const Header = () => {
         <div className="hidden md:block ">
           <a
             href="#"
-            className="font-bold  bg-indigo-600 text-white px-4  py-2 rounded-md hover:bg-indigo-800 transition-colors duration-300 flex gap-3"
+            className="font-bold  bg-indigo-600 text-white px-4  py-2 rounded-md hover:bg-indigo-800 transition-colors duration-300 flex gap-3 shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)]"
           >
             <FaDownload />  Resume
           </a>

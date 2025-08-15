@@ -36,7 +36,7 @@ const Contact = () => {
      <div className="flex flex-col md:flex-row items-center justify-around py-20 gap-10 md:gap-30">
         {/* Left info panel */}
          <div className="space-y-6 max-w-md md:max-w-none w-full md:w-auto">
-          <h1 className="text-5xl font-extrabold flex items-center gap-2">
+          <h1 className="text-5xl font-extrabold flex items-center gap-2 caveat-write ">
             Anam <span className="text-red-500">.</span>
           </h1>
           <div className="space-y-4 text-gray-300">
@@ -44,7 +44,7 @@ const Contact = () => {
             <p className="flex items-center gap-3"><FaPhone /> +88 01950029882</p>
             <p className="flex items-center gap-3"><FaMapMarkerAlt /> Brahmon-baria, Bangladesh</p>
           </div>
-          <h3 className="uppercase tracking-widest font-semibold text-gray-400">Connect On</h3>
+          <h3 className="uppercase tracking-widest font-semibold text-gray-400">Connect me</h3>
           <div className="flex space-x-6">
             <a href="https://www.facebook.com/an.am.hsan.2024?mibextid=ZbWKwL" aria-label="Facebook" className="p-3 rounded-full bg-[#1a1b29] hover:bg-red-600 transition-colors"><FaFacebookF /></a>
             <a href="www.linkedin.com/in/anamolhasan" aria-label="LinkedIn" className="p-3 rounded-full bg-[#1a1b29] hover:bg-blue-700 transition-colors"><FaLinkedinIn /></a>
@@ -55,8 +55,8 @@ const Contact = () => {
 
         {/* Right contact form */}
         <div className="w-full max-w-md md:max-w-none">
-          <h2 className="text-4xl font-extrabold mb-2">
-            <span className="">CONTACT</span> ME
+          <h2 className="text-4xl font-extrabold mb-2 caveat-write ">
+            CONTACT ME
           </h2>
           <p className="uppercase text-sm text-gray-400 mb-8">
             IF YOU HAVE QUESTIONS PLEASE LEAVE A MESSAGE
@@ -93,9 +93,10 @@ const Contact = () => {
 
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 text-sm py-4 border-t border-gray-700">
-        © This Portfolio is Proudly Owned by Anamol Hasan.
-      </footer>
+     <footer className="bg-gray-900 text-gray-400 text-sm py-4 border-t border-gray-700 text-center transition-colors duration-300 hover:text-white caveat-write ">
+  {new Date().getFullYear()} © This Portfolio is Proudly Owned by Anamol Hasan.
+</footer>
+
     </section>
    </div>
   );

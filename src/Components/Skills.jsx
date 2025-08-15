@@ -18,7 +18,7 @@ import {
 const Skills = () => {
   // ==== data (white icon inside colored circle) ====
   const frontend = [
-    { name: "HTML", Icon: FaHtml5, bg: "bg-orange-500" },
+    { name: "HTML", Icon: FaHtml5, bg: "bg-orange-500 " },
     { name: "CSS", Icon: FaCss3Alt, bg: "bg-blue-500" },
     { name: "JavaScript", Icon: SiJavascript, bg: "bg-yellow-400" },
     { name: "React", Icon: FaReact, bg: "bg-cyan-400" },
@@ -50,10 +50,11 @@ const Skills = () => {
       <div className="flex  flex-wrap justify-center gap-8  place-items-center">
         {skills.map(({ name, Icon, bg }, i) => (
           <div key={i} className="flex flex-col items-center">
-            <div
-              className={`w-16 h-16 rounded-full ${bg} flex items-center justify-center transform transition
-                          hover:scale-105 shadow-md`}
-            >
+           <div
+  className={`w-16 h-16 rounded-full ${bg} flex items-center justify-center 
+    transform transition hover:scale-105 
+    shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)]`}
+>
               <Icon className="text-4xl text-white" />
             </div>
             <p className="mt-3 font-bold">{name}</p>
@@ -70,7 +71,7 @@ const Skills = () => {
         <div className="flex flex-col items-center justify-center text-center">
           <MdWbTwilight className="text-5xl mb-2" />
           <p className="tracking-[0.2em] text-sm opacity-80">EXPERTISE</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Skill Set</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 caveat-write">Skill Set</h2>
         </div>
 
         {/* Categories */}

@@ -3,6 +3,7 @@
 
 html {
   scroll-behavior: smooth;
+ 
 }
 
 .caveat-write {
@@ -24,7 +25,8 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  position: relative;
+  background: linear-gradient(to right, #a5a4a5, #bdb89c, #3a423d);
+  background-attachment: fixed;
 }
 
 
