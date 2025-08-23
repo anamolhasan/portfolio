@@ -78,7 +78,7 @@ const Header = () => {
         {/* Resume Button */}
         <div className="hidden md:block ">
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1fVpW5RjlkGgvJ6ylsrD_v7spFh2W0wGu/view?usp=sharing"
             className="font-bold  bg-indigo-600 text-white px-4  py-2 rounded-md hover:bg-indigo-800 transition-colors duration-300 flex gap-3 shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)]"
           >
             <FaDownload />  Resume

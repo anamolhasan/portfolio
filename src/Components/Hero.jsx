@@ -22,9 +22,9 @@ const Hero = () => {
           </p>
           
           {/* Hire Me Button */}
-          <button className="hover:border hover:border-blue-600 text-white hover:text-blue-600 px-16 py-2 rounded-lg bg-blue-600 hover:bg-transparent transition shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)] ">
+          <a href='https://drive.google.com/file/d/1fVpW5RjlkGgvJ6ylsrD_v7spFh2W0wGu/view?usp=sharing' className="hover:border hover:border-blue-600 text-white hover:text-blue-600 px-16 py-2 rounded-lg bg-blue-600 hover:bg-transparent transition shadow-[0_10px_25px_rgba(0,0,0,0.4),0_6px_10px_rgba(0,0,0,0.3)] ">
             My Resume
-          </button>
+          </a>
 
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-4 mt-5">
